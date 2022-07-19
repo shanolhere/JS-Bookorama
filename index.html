@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookorama</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="head">
+        <h1>Bookorama</h1>
+        <p>Books for Ninjas</p>
+        <input type="search" class="search" placeholder="Search books..." />
+      </div>
+      <div class="booksBox">
+        <h2>Books to Read</h2>
+        <ul class="bookul">
+          <li>
+            <span>Name of the Wind</span>
+            <button class="delete">Delete</button>
+          </li>
+          <li>
+            <span>The wise Man</span>
+            <button class="delete">Delete</button>
+          </li>
+          <li>
+            <span>Kafka on the shore</span>
+            <button class="delete">Delete</button>
+          </li>
+          <li>
+            <span>The master and his Discipline</span>
+            <button class="delete">Delete</button>
+          </li>
+        </ul>
+        <br />
+        <div>
+          <input type="checkbox" class="checkbox" /><label>
+            Hide all Books</label
+          >
+        </div>
+
+        <div class="addContainer">
+          <input type="text" class="text" placeholder="Add a book" />
+          <button class="add">Add</button>
+        </div>
+        <div class="result"></div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

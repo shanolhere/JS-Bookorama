@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  border: 2px solid rgb(179, 175, 175);
+  /* padding: 30px; */
+  width: 500px;
+}
+.head {
+  background-color: rgb(243, 243, 243);
+  width: 490px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.booksBox {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.booksBox h2 {
+  padding: 10px 0;
+}
+.bookul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-left: 5px solid rgb(179, 175, 175);
+}
+li:hover {
+  border-left: 5px solid purple;
+}
+.delete {
+  height: 32px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: purple;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:active {
+  transform: scaleX(1.1);
+}
+
+.addContainer {
+  display: flex;
+}
+.text {
+  outline: none;
+  border: 2px solid rgb(179, 175, 175);
+  padding: 5px 15px;
+  /* border-radius: 5px; */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 1;
+}
+.add {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: purple;
+  padding: 5px 16px;
+  /* border-radius: 6px; */
+  cursor: pointer;
+}
+.text:active,
+.text:focus {
+  border: 2px solid purple;
+}
+.search {
+  outline: none;
+  border: 2px solid rgb(179, 175, 175);
+  padding: 5px 15px;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 1;
+}
+.search:active,
+.search:focus {
+  border: 2px solid purple;
+}
